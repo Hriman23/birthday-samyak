@@ -452,8 +452,6 @@ body {
     transform: scale(0);
     animation: scaleCricle 3s 15s forwards ease-in-out;
 }
-
-
 .box__letter{
     position: fixed;
     top: 0;
@@ -523,15 +521,6 @@ body {
     height: 100%;
     padding: 1.7rem;
     border-right: 3px solid var(--color-border);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.content__letter .left #heart__letter{
-    opacity: 0;
-    max-width: 220px;
-    height: auto;
-    flex-shrink: 0;
 }
 #heart__letter.animationOp{
     animation: opacityHeart 1s 1s forwards;
@@ -605,6 +594,7 @@ body {
     overflow-y: auto;
     flex: 1;
     scroll-behavior: smooth;
+    white-space: pre-line;
 }
 
 #copy {
@@ -627,7 +617,25 @@ body {
     cursor: pointer;
 }
 
+.gif-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    justify-items: center;
+    align-items: center;
+}
 
+.letter-gif{
+    width: 100%;
+    width: 150px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+.gif-small{
+    height: 140px;
+}
+
+/* ===== Mobile Screen Configuration ===== */
 
 @media screen and (max-width: 658px)   {
 
